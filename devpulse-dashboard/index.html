@@ -65,7 +65,7 @@
         </div>
       </section>
 
-      <!-- Compute Tiers Section -->
+      <!-- compute tiers section -->
       <section id="tiers" class="tiers-section">
         <header class="section-header">
           <h2 class="section-title">
@@ -106,7 +106,44 @@
           </article>
         </div>
       </section>
-      <section id="register" class="register-section"></section>
+
+      <!-- register section -->
+      <section id="register" class="register-section">
+        <header class="section-header">
+          <h2 class="section-title">Claim your API keys</h2>
+          <p class="section-caption">Let's get you up and running!</p>
+        </header>
+        <form action="#" method="post" class="request-form">
+          <div class="form-group">
+            <label for="work-email" class="form-label">Work Email</label>
+            <input
+              type="text"
+              name="workEmail"
+              id="work-email"
+              class="form-input"
+              placeholder="example@abc.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="node-count" class="form-label">Number of Nodes</label>
+            <input
+              type="number"
+              name="nodeCount"
+              id="node-count"
+              class="form-input"
+              min="50"
+              max="1000"
+              step="50"
+              placeholder="500"
+              required
+            />
+            <span class="input-range">Min: 50 - Max: 1000</span>
+          </div>
+          <div class="form-group"></div>
+          <div class="form-group"></div>
+        </form>
+      </section>
     </main>
     <footer></footer>
   </body>
