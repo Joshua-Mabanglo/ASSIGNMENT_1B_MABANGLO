@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS Variables */
+:root {
+  --bg-light: #fafafc;
+  --bg-card: #f4f4fb;
+  --border-color: #d5d5d5;
+  --primary: #f5cf29;
+  --primary-hover: #fdda3e;
+  --text: #121714;
+  --text-muted: #9ca3af;
+  --accent: #9eef9c;
+  /* --font-family: use Inter */
+  --transition-speed: 0.2;
+}
+
+/* Font family & bg colors */
+html {
+  scroll-behavior: smooth;
+  /* font-family: var(--font-family); */
+  background-color: var(--bg-light);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Styling buttons & classes */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1 solid transparent;
+  cursor: pointer;
+  transition: background-color var(--transition-speed),
+    transform var(--transition-speed),
+    var(--border-color) var(--transition-speed);
+}
+
+/* Keyboard browsing */
+.btn:focus-visible {
+  outline: wpx solid var(--primary);
+  outline-offset: 3px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+}
