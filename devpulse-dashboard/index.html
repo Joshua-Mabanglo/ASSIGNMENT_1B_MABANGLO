@@ -140,11 +140,44 @@
             />
             <span class="input-range">Min: 50 - Max: 1000</span>
           </div>
-          <div class="form-group"></div>
-          <div class="form-group"></div>
+          <div class="form-group">
+            <label for="throughput" class="form-label">Throughput</label>
+            <input
+              type="number"
+              name="throughput"
+              id="throughput"
+              class="form-input"
+              min="1000"
+              max="10000"
+              step="500"
+              placeholder="5000"
+              required
+            />
+            <span class="input-range">Min: 1000 bps - Max: 10000 bps</span>
+          </div>
+          <div class="form-group">
+            <label for="tier-type" class="form-label">Tier Type</label>
+            <select name="tierType" id="tier-type" class="form-control">
+              <option value="developer">Developer - $5 monthly</option>
+              <option value="pro">Pro Cluster - $15 monthly</option>
+              <option value="enterprise">
+                Enterprise Dedicated - Custom pricing
+              </option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary">Get API Sandbox</button>
         </form>
       </section>
     </main>
-    <footer></footer>
+
+    <!-- footer section -->
+    <footer>
+      <p class="footer-copyright" $copy;>2026 Devpulse Inc.</p>
+      <nav class="footer-links" aria-label="DevPulse footer links">
+        <a href="#hero">Back to top</a>
+        <a href="#features">Product features</a>
+        <a href="#tiers">Hosting tiers</a>
+      </nav>
+    </footer>
   </body>
 </html>
