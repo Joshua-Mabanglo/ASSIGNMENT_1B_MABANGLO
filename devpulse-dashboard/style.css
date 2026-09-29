@@ -114,11 +114,69 @@ html {
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
+  text-align: center;
   max-width: 900px;
 }
 
 .hero-caption {
   font-size: 1.15rem;
   margin-bottom: 1rem;
+}
+
+.section-area {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+
+.section-header {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  text-align: center;
+  max-width: 900px;
+  margin-bottom: 1.5rem;
+}
+
+.section-caption {
+  margin-top: 1rem;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  max-width: 1000px;
+}
+
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--bg-card);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: border-color var(--transition-speed);
+}
+
+.feature-box:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-caption {
+  margin-bottom: 1.5rem;
+}
+
+.feature-icon {
+  font-size: 4rem;
+  text-align: center;
 }
