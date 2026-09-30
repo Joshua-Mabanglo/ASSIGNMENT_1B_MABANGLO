@@ -27,8 +27,11 @@ As a developer, I would like to be provisioned an API sandbox after filling out 
 ## DOM (The indentation keeps getting removed whenever I save the file)
 
 index.html
+
 head
+
 body
+
 header class=“site-header”
 div class=“header-logo”
 img
